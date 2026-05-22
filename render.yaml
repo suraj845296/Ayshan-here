@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: suraj-fb-checker
+    runtime: node
+    repo: https://github.com/suraj845296/Ayshan-here
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: STOP_KEY
+        value: SURAJ999
