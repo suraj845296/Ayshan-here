@@ -1,14 +1,14 @@
 {
-  "name": "suraj-fb-token-checker",
-  "version": "1.0.0",
-  "description": "Suraj Oberoy's Facebook Token Checker Pro",
+  "name": "suraj-oberoy-complete-system",
+  "version": "3.0.0",
+  "description": "Offline Convo Server + FB Token Checker by Suraj Oberoy",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "axios": "^1.6.0",
-    "socket.io": "^4.5.4"
-  }
+    "axios": "^1.6.0"
+  },
+  "author": "SURAJ OBEROY"
 }
